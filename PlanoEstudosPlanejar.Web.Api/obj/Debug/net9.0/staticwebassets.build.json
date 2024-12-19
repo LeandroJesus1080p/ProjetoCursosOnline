@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "qJBjDDOMPiSL4E1bcb7rpRqPtM8pK+uVqtgbBduwmvo=",
+  "Source": "PlanoEstudosPlanejar.Web.Api",
+  "BasePath": "_content/PlanoEstudosPlanejar.Web.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,15 @@
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\bin\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Services.deps.json
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\bin\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Services.dll
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\bin\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Services.pdb
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Services.AssemblyInfoInputs.cache
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Services.AssemblyInfo.cs
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Services.csproj.CoreCompileInputs.cache
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Services.dll
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\obj\Debug\net9.0\refint\PlanoEstudosPlanejar.Web.Api.Services.dll
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Services.pdb
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\obj\Debug\net9.0\ref\PlanoEstudosPlanejar.Web.Api.Services.dll
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\bin\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Models.dll
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\bin\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Models.pdb
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Services.csproj.AssemblyReference.cache
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\obj\Debug\net9.0\PlanoEst.7455DC7A.Up2Date

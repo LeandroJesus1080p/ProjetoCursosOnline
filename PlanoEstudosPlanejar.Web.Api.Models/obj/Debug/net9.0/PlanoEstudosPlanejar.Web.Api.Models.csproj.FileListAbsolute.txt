@@ -1,0 +1,12 @@
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\bin\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Models.deps.json
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\bin\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Models.dll
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\bin\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Models.pdb
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Models.csproj.AssemblyReference.cache
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Models.AssemblyInfoInputs.cache
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Models.AssemblyInfo.cs
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Models.csproj.CoreCompileInputs.cache
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Models.dll
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\obj\Debug\net9.0\refint\PlanoEstudosPlanejar.Web.Api.Models.dll
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Models.pdb
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\obj\Debug\net9.0\ref\PlanoEstudosPlanejar.Web.Api.Models.dll
