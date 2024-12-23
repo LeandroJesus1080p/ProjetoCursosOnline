@@ -159,3 +159,5 @@ C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlaneja
 C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api\obj\Debug\net9.0\ref\PlanoEstudosPlanejar.Web.Api.dll
 C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api\bin\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Services.dll
 C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api\bin\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Services.pdb
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.sourcelink.json
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api\bin\Debug\net9.0\libman.json

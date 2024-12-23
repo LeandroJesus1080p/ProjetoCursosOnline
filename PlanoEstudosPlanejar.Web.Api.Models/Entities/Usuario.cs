@@ -14,6 +14,6 @@ namespace PlanoEstudosPlanejar.Web.Api.Models.Entities
         public required string Eamil { get; set; }
         public required string Senha { get; set; }
 
-        public ICollection<PlanoEstudo>? PlanoEstudo { get; set; }
+        public ICollection<PlanoEstudo>? PlanoEstudos { get; set; }
     }
 }

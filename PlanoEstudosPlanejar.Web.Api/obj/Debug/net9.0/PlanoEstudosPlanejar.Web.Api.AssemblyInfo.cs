@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PlanoEstudosPlanejar.Web.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+985878e81ba7add84e1e1b69d3468ee2a43c8112")]
 [assembly: System.Reflection.AssemblyProductAttribute("PlanoEstudosPlanejar.Web.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PlanoEstudosPlanejar.Web.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -11,7 +11,6 @@ namespace PlanoEstudosPlanejar.Web.Api.Models.Entities
         public required string Nome { get; set; }
         public required string Caminho { get; set; }
         public string? Descricao { get; set; }
-
         public int PlanoEstudoId { get; set; }
         public PlanoEstudo? PlanoEstudo { get; set; }
     }

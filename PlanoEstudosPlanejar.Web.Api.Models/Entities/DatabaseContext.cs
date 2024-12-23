@@ -20,7 +20,7 @@ namespace PlanoEstudosPlanejar.Web.Api.Models.Entities
         {
             modelBuilder.Entity<PlanoEstudo>()
                 .HasOne(p => p.Usuario)
-                .WithMany(u => u.PlanoEstudo)
+                .WithMany(u => u.PlanoEstudos)
                 .HasForeignKey(u => u.UsuarioId)
                 .OnDelete(DeleteBehavior.Cascade);
 

@@ -94,6 +94,110 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "PlanoEstudosPlanejar.Web.Api.Controllers.MateriasController",
+    "Method": "Get",
+    "RelativePath": "api/Materias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PlanoEstudosPlanejar.Web.Api.Models.Entities.Materias",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanoEstudosPlanejar.Web.Api.Controllers.MateriasController",
+    "Method": "Post",
+    "RelativePath": "api/Materias",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "materias",
+        "Type": "PlanoEstudosPlanejar.Web.Api.Models.Entities.Materias",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanoEstudosPlanejar.Web.Api.Models.Entities.Materias",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanoEstudosPlanejar.Web.Api.Controllers.MateriasController",
+    "Method": "Put",
+    "RelativePath": "api/Materias",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "materias",
+        "Type": "PlanoEstudosPlanejar.Web.Api.Models.Entities.Materias",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PlanoEstudosPlanejar.Web.Api.Controllers.MateriasController",
+    "Method": "Delete",
+    "RelativePath": "api/Materias",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PlanoEstudosPlanejar.Web.Api.Controllers.MateriasController",
+    "Method": "GetId",
+    "RelativePath": "api/Materias/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanoEstudosPlanejar.Web.Api.Models.Entities.Materias",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "PlanoEstudosPlanejar.Web.Api.Controllers.PlanoEstudosController",
     "Method": "Get",
     "RelativePath": "api/PlanoEstudos",

@@ -13,3 +13,4 @@ C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlaneja
 C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\bin\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Models.pdb
 C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Services.csproj.AssemblyReference.cache
 C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\obj\Debug\net9.0\PlanoEst.7455DC7A.Up2Date
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Services\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Services.sourcelink.json

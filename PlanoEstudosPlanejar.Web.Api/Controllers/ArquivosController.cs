@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PlanoEstudosPlanejar.Web.Api.Models.Entities;
+using PlanoEstudosPlanejar.Web.Api.Services.ArquivoServices;
 using PlanoEstudosPlanejar.Web.Api.Services.Repository;
 
 namespace PlanoEstudosPlanejar.Web.Api.Controllers
@@ -10,66 +11,106 @@ namespace PlanoEstudosPlanejar.Web.Api.Controllers
     [ApiController]
     public class ArquivosController : ControllerBase
     {
-        private readonly IArquivoRepository _repository;
+        private readonly IArquivoService _repository;
 
-        public ArquivosController(IArquivoRepository repository)
+        public ArquivosController(IArquivoService repository)
         {
             _repository = repository;
         }
 
         [HttpGet]
-        public ActionResult Get()
+        public async Task<ActionResult> Get()
         {
-            var procurarArquivos = _repository.GetArquivo();
-
-            return Ok(new
+            try
             {
-                arquivos = procurarArquivos
-            });
+                var procurarArquivos = await _repository.GetAll();
+
+                return Ok(new
+                {
+                    arquivos = procurarArquivos
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+
         }
 
         [HttpGet("{id}")]
-        public ActionResult GetId(int id)
+        public async Task<ActionResult> GetId(int id)
         {
-            var procurarId = _repository.GetArquivoById(id);
-
-            return Ok(new
+            try
             {
-                arquivo = procurarId
-            });
+                var procurarId = await _repository.GetOne(id);
+
+                return Ok(new
+                {
+                    arquivo = procurarId
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+            
         }
 
         [HttpPost]
-        public ActionResult<Arquivos> Post(Arquivos arquivos)
+        public async Task<ActionResult<Arquivos>> Post(Arquivos arquivos)
         {
-            _repository.InsertArquivo(arquivos);
-
-            return Ok(new
+            try
             {
-                Post = arquivos
-            });
+                await _repository.Create(arquivos);
+
+                return Ok(new
+                {
+                    Post = arquivos
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+            
         }
 
         [HttpPut]
         public async Task<ActionResult<Arquivos>> Put(Arquivos arquivos)
         {
-            _repository.UpdateArquivo(arquivos);
-
-            return Ok(new
+            try
             {
-                Arquivos = arquivos
-            });
+                await _repository.Update(arquivos);
+
+                return Ok(new
+                {
+                    Arquivos = arquivos
+                });
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex);
+            }
+            
         }
 
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
-            _repository.DeleteArquivo(id);
-
-            return Ok(new
+            try
             {
-                Arquivo = id
-            });
+                await _repository.Delete(id);
+
+                return Ok(new
+                {
+                    Arquivo = id
+                });
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex);
+            }
+            
         }
     }
 }

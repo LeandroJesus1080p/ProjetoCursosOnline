@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PlanoEstudosPlanejar.Web.Api.Models.Entities;
-using PlanoEstudosPlanejar.Web.Api.Services.Repository;
+using PlanoEstudosPlanejar.Web.Api.Services.PlanoEstudoServices;
 
 namespace PlanoEstudosPlanejar.Web.Api.Controllers
 {
@@ -10,24 +10,24 @@ namespace PlanoEstudosPlanejar.Web.Api.Controllers
     [ApiController]
     public class PlanoEstudosController : ControllerBase
     {
-        private readonly IPlanoEstudosRepository _repository;
+        private readonly IPlanoEstudoService _repository;
 
-        public PlanoEstudosController(IPlanoEstudosRepository repository)
+        public PlanoEstudosController(IPlanoEstudoService repository)
         {
             _repository = repository;
         }
 
         [HttpGet]
-        public ActionResult Get()
+        public async Task<ActionResult> Get()
         {
-            var planos = _repository.GetPlanoEstudo();
+            var planos = await _repository.GetAll();
             return Ok(planos);
         }
 
         [HttpGet("{id}")]
-        public ActionResult GetId(int id)
+        public async Task<ActionResult> GetId(int id)
         {
-            var plano = _repository.GetPlanoEstudoById(id);
+            var plano = await _repository.GetOne(id);
             return Ok(new
             {
                 Plano = plano
@@ -35,9 +35,9 @@ namespace PlanoEstudosPlanejar.Web.Api.Controllers
         }
 
         [HttpPost]
-        public ActionResult<PlanoEstudo> Post(PlanoEstudo plano)
+        public async Task<ActionResult<PlanoEstudo>> Post(PlanoEstudo plano)
         {
-            _repository.InsertPlanoEstudo(plano);
+            await _repository.Create(plano);
             return Ok(new
             {
                 User = plano
@@ -45,9 +45,9 @@ namespace PlanoEstudosPlanejar.Web.Api.Controllers
         }
 
         [HttpPut]
-        public ActionResult<PlanoEstudo> Put(PlanoEstudo plano)
+        public async Task<ActionResult<PlanoEstudo>> Put(PlanoEstudo plano)
         {
-            _repository.UpdatePlanoEstudo(plano);
+            await _repository.Update(plano);
 
             return Ok(new
             {
@@ -56,9 +56,9 @@ namespace PlanoEstudosPlanejar.Web.Api.Controllers
         }
 
         [HttpDelete]
-        public ActionResult<PlanoEstudo> Delete(int id)
+        public async Task<ActionResult<PlanoEstudo>> Delete(int id)
         {
-            _repository.DeletePlanoEstudo(id);
+            await _repository.Delete(id);
 
             return Ok(new
             {

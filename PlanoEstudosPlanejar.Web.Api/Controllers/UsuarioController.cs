@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PlanoEstudosPlanejar.Web.Api.Models.Entities;
 using PlanoEstudosPlanejar.Web.Api.Services.Repository;
+using PlanoEstudosPlanejar.Web.Api.Services.UsuarioServices;
 
 namespace PlanoEstudosPlanejar.Web.Api.Controllers
 {
@@ -10,23 +11,23 @@ namespace PlanoEstudosPlanejar.Web.Api.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        private readonly IUsuarioRepository _repository;
-        public UsuarioController(IUsuarioRepository repository)
+        private readonly IUsuarioService _repository;
+        public UsuarioController(IUsuarioService repository)
         {
             _repository = repository;
         }
 
         [HttpGet]
-        public ActionResult Get()
+        public async Task<ActionResult> Get()
         {
-            var usuarios = _repository.GetUsuarios();
+            var usuarios = await _repository.GetAll();
             return Ok(usuarios);
         }
 
         [HttpGet("{id}")]
-        public ActionResult GetId(int id)
+        public async Task<ActionResult> GetId(int id)
         {
-            var userId = _repository.GetUsuarioById(id);
+            var userId = await _repository.GetOne(id);
 
             return Ok(new
             {
@@ -35,9 +36,9 @@ namespace PlanoEstudosPlanejar.Web.Api.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Usuario> Post(Usuario usuario)
+        public async Task<ActionResult<Usuario>> Post(Usuario usuario)
         {
-            _repository.InsertUsuario(usuario);
+            await _repository.Create(usuario);
             
             return Ok(new
             {
@@ -50,7 +51,7 @@ namespace PlanoEstudosPlanejar.Web.Api.Controllers
         {
             try
             {
-                _repository.UpdateUsuario(usuario);
+                await _repository.Update(usuario);
                 
                 return Ok(new
                 {
@@ -67,7 +68,7 @@ namespace PlanoEstudosPlanejar.Web.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
-            _repository.DeleteUsuario(id);
+            await _repository.Delete(id);
 
             return Ok(new
             {

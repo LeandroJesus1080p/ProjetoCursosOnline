@@ -10,3 +10,4 @@ C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlaneja
 C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\obj\Debug\net9.0\refint\PlanoEstudosPlanejar.Web.Api.Models.dll
 C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Models.pdb
 C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\obj\Debug\net9.0\ref\PlanoEstudosPlanejar.Web.Api.Models.dll
+C:\Users\leand\Desktop\Projetos\PlanoEstudosPlanejar.Web.Api\PlanoEstudosPlanejar.Web.Api.Models\obj\Debug\net9.0\PlanoEstudosPlanejar.Web.Api.Models.sourcelink.json
