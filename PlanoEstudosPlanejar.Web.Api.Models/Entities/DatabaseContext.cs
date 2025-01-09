@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace PlanoEstudosPlanejar.Web.Api.Models.Entities
         public DbSet<PlanoEstudo> PlanoEstudos { get; set; }
         public DbSet<Materias> Materias { get; set; }
         public DbSet<Arquivos> Arquivos { get; set; }
+        public DbSet<Pessoa> Pessoas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -35,6 +37,7 @@ namespace PlanoEstudosPlanejar.Web.Api.Models.Entities
                 .WithMany(u => u.Arquivos)
                 .HasForeignKey(u => u.PlanoEstudoId)
                 .OnDelete(DeleteBehavior.Cascade);
+
         }
     }
 }

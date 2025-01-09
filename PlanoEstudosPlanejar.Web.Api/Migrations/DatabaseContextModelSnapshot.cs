@@ -73,6 +73,28 @@ namespace PlanoEstudosPlanejar.Web.Api.Migrations
                     b.ToTable("Materias");
                 });
 
+            modelBuilder.Entity("PlanoEstudosPlanejar.Web.Api.Models.Entities.Pessoa", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Idade")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SobreNome")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Pessoas");
+                });
+
             modelBuilder.Entity("PlanoEstudosPlanejar.Web.Api.Models.Entities.PlanoEstudo", b =>
                 {
                     b.Property<int>("Id")

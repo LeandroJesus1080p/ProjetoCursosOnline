@@ -198,6 +198,68 @@
     ]
   },
   {
+    "ContainingType": "PlanoEstudosPlanejar.Web.Api.Controllers.PessoaController",
+    "Method": "Get",
+    "RelativePath": "api/Pessoa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PlanoEstudosPlanejar.Web.Api.Controllers.PessoaController",
+    "Method": "Post",
+    "RelativePath": "api/Pessoa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pessoa",
+        "Type": "PlanoEstudosPlanejar.Web.Api.Models.Entities.Pessoa",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanoEstudosPlanejar.Web.Api.Models.Entities.Pessoa",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanoEstudosPlanejar.Web.Api.Controllers.PessoaController",
+    "Method": "Put",
+    "RelativePath": "api/Pessoa",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanoEstudosPlanejar.Web.Api.Models.Entities.Pessoa",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "PlanoEstudosPlanejar.Web.Api.Controllers.PlanoEstudosController",
     "Method": "Get",
     "RelativePath": "api/PlanoEstudos",

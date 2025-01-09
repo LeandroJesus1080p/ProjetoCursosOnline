@@ -1,10 +1,5 @@
 ﻿using PlanoEstudosPlanejar.Web.Api.Models.Entities;
 using PlanoEstudosPlanejar.Web.Api.Services.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PlanoEstudosPlanejar.Web.Api.Services.MateriaServices
 {
@@ -12,11 +7,8 @@ namespace PlanoEstudosPlanejar.Web.Api.Services.MateriaServices
     {
     }
 
-    public class MateriaService : Repository<Materias>, IMateriaService
+    public class MateriaService(DatabaseContext context) : Repository<Materias>(context), IMateriaService
     {
-        public MateriaService(DatabaseContext context) : base(context)
-        {   
-        }
     }
 
 }

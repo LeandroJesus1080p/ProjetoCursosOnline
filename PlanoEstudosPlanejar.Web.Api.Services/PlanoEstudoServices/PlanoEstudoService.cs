@@ -1,22 +1,25 @@
-﻿using PlanoEstudosPlanejar.Web.Api.Models.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using PlanoEstudosPlanejar.Web.Api.Models.Entities;
 using PlanoEstudosPlanejar.Web.Api.Services.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PlanoEstudosPlanejar.Web.Api.Services.PlanoEstudoServices
 {
     public interface IPlanoEstudoService : IRepository<PlanoEstudo>
     {
-       
     }
 
-    public class PlanoEstudoService : Repository<PlanoEstudo>, IPlanoEstudoService
+    public class PlanoEstudoService(DatabaseContext context) : Repository<PlanoEstudo>(context), IPlanoEstudoService
     {
-        public PlanoEstudoService(DatabaseContext context) : base(context)
+        public override async Task<IEnumerable<PlanoEstudo>> GetAll()
         {
+            return await context.Set<PlanoEstudo>().Include("Materias").Include("Arquivos").ToListAsync();
         }
+
+        public override async Task<PlanoEstudo> GetOne(int id)
+        {
+            return await context.Set<PlanoEstudo>().Include("Materias").Include("Arquivos").FirstOrDefaultAsync(p => p.Id == id) 
+                ?? throw new Exception("Id não encontrado");
+        }
+            
     }
 }

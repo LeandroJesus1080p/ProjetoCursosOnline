@@ -18,13 +18,8 @@ namespace PlanoEstudosPlanejar.Web.Api.Services.Repository
         Task<int> SaveAsync();
     }
 
-    public class Repository<T> : IRepository<T> where T : class
+    public class Repository<T>(DatabaseContext _context) : IRepository<T> where T : class
     {
-        private readonly DatabaseContext _context;
-        public Repository(DatabaseContext context)
-        {
-            _context = context;
-        }
 
         public virtual async Task<IEnumerable<T>> GetAll()
         {

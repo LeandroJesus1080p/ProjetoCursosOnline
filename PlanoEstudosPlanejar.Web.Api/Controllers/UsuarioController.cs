@@ -9,14 +9,8 @@ namespace PlanoEstudosPlanejar.Web.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuarioController : ControllerBase
+    public class UsuarioController(IUsuarioService _repository) : ControllerBase
     {
-        private readonly IUsuarioService _repository;
-        public UsuarioController(IUsuarioService repository)
-        {
-            _repository = repository;
-        }
-
         [HttpGet]
         public async Task<ActionResult> Get()
         {

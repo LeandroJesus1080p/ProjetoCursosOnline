@@ -2,12 +2,14 @@ using Microsoft.EntityFrameworkCore;
 using PlanoEstudosPlanejar.Web.Api.Models.Entities;
 using PlanoEstudosPlanejar.Web.Api.Services.ArquivoServices;
 using PlanoEstudosPlanejar.Web.Api.Services.MateriaServices;
+using PlanoEstudosPlanejar.Web.Api.Services.PessoaServices;
 using PlanoEstudosPlanejar.Web.Api.Services.PlanoEstudoServices;
-using PlanoEstudosPlanejar.Web.Api.Services.Repository;
 using PlanoEstudosPlanejar.Web.Api.Services.UsuarioServices;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var AllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 // Add services to the container.
 
@@ -27,13 +29,17 @@ builder.Services.AddDbContextPool<DatabaseContext>(options =>
 
 });
 
-
+// define política padrão CORS
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder => { builder.WithOrigins("*").AllowAnyHeader().AllowAnyMethod(); });
+});
 
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
-
 builder.Services.AddScoped<IArquivoService, ArquivoService>();
 builder.Services.AddScoped<IPlanoEstudoService, PlanoEstudoService>();
 builder.Services.AddScoped<IMateriaService, MateriaService>();
+builder.Services.AddScoped<IPessoaService, PessoaService>();
 
 var app = builder.Build();
 
@@ -44,6 +50,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors();
 
 app.UseHttpsRedirection();
 

@@ -1,10 +1,6 @@
-﻿using PlanoEstudosPlanejar.Web.Api.Models.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using PlanoEstudosPlanejar.Web.Api.Models.Entities;
 using PlanoEstudosPlanejar.Web.Api.Services.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PlanoEstudosPlanejar.Web.Api.Services.UsuarioServices
 {
@@ -12,10 +8,18 @@ namespace PlanoEstudosPlanejar.Web.Api.Services.UsuarioServices
     {
     }
 
-    public class UsuarioService : Repository<Usuario>, IUsuarioService
+    public class UsuarioService(DatabaseContext context) : Repository<Usuario>(context), IUsuarioService
     {
-        public UsuarioService(DatabaseContext context) : base(context)
-        {    
+      
+        public override async Task<IEnumerable<Usuario>> GetAll()
+        {
+            return await context.Set<Usuario>().Include("PlanoEstudos").ToListAsync();
+        }
+
+        public override async Task<Usuario> GetOne(int id)
+        {
+            return await context.Set<Usuario>().Include("PlanoEstudos").FirstOrDefaultAsync(p => p.Id == id) 
+                ?? throw new Exception("Id não encontrado");
         }
     }
 }
